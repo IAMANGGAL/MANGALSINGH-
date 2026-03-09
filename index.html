@@ -25,46 +25,41 @@ body{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;m
   box-shadow: 12px 12px 0px var(--ink);
 }
 
-/* HEADER & USER PROFILE */
 header{padding:.9rem 1.2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--ink);background:var(--paper);position:sticky;top:0;z-index:10;}
 .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;letter-spacing:-.04em;}
 .user-pill { display: flex; align-items: center; gap: 8px; background: white; padding: 4px 12px; border-radius: 50px; border: 1.5px solid var(--ink); font-size: 0.7rem; font-weight: 700; }
 .user-pill img { width: 18px; height: 18px; border-radius: 50%; }
 
-/* LAYOUT */
 .wrap{max-width:540px;margin:0 auto;padding:1.4rem 1rem 2rem;}
 h1{font-family:'Syne',sans-serif;font-weight:800;font-size:1.75rem;line-height:1.1;letter-spacing:-.03em;margin-bottom:.3rem;}
 .dz{border:2.5px dashed var(--border);border-radius:14px;padding:2.2rem 1rem;text-align:center;background:var(--card);cursor:pointer;transition:all 0.2s; margin-top: 1rem;}
 
-/* IMAGE GRID */
 .igrid{display:grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 1.5rem 0;}
 .icard{background:var(--card);border:1.5px solid var(--border);border-radius:8px;overflow:hidden;position:relative; aspect-ratio: 1/1;}
 .icard img{width:100%;height:100%;object-fit:cover;display:block;}
 .inum{position:absolute;top:3px;left:3px;background:var(--ink);color:var(--paper);font-family:'Syne',sans-serif;font-size:.56rem;font-weight:700;padding:.1rem .3rem;border-radius:2px;}
 
-/* BUTTONS & PROGRESS */
 .cbtn{width:100%;padding:1rem;background:var(--ink);color:var(--paper);border:none;border-radius:12px;font-family:'Syne',sans-serif;font-weight:700;cursor:pointer; margin-top: 10px;}
 .prog{display:none;margin-top:1.5rem;}
 .prog.on{display:block;}
 .pbg{height:8px;background:var(--border);border-radius:10px;overflow:hidden;}
 .pbar{height:100%;background:var(--accent);width:0%; transition: width 0.2s;}
 
-/* FEEDBACK SECTION */
 .comm-box { margin-top: 3rem; background: #fff; padding: 1.2rem; border: 2px solid var(--border); border-radius: 20px; }
 .comm-list { max-height: 200px; overflow-y: auto; margin-bottom: 1rem; }
 .comm-item { padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
 
 footer { text-align: center; padding: 3rem 1rem; border-top: 1px solid var(--border); margin-top: 2rem; }
-.dev-name { font-family: 'Syne'; font-size: 1rem; color: var(--accent); text-decoration: none; font-weight: 800; }
+.dev-name { font-family: 'Syne', sans-serif; font-size: 1rem; color: var(--accent); text-decoration: none; font-weight: 800; }
 </style>
 </head>
 <body>
 
 <div id="authOverlay">
   <div class="auth-card">
-    <div style="font-size: 3rem; margin-bottom: 1rem;">🔥</div>
-    <h2 style="font-family:'Syne'; margin-bottom: 0.5rem;">MANGAL <span style="color:var(--accent)">PDF</span></h2>
-    <p style="color:var(--muted); font-size: 0.85rem; margin-bottom: 2rem;">Security aur behtar feature ke liye login karein.</p>
+    <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+    <h2 style="font-family:'Syne';">MANGAL <span style="color:var(--accent)">PDF</span></h2>
+    <p style="color:var(--muted); font-size: 0.85rem; margin: 1rem 0 2rem;">Security ke liye login karein.</p>
     
     <div id="g_id_onload"
          data-client_id="952256750591-h5oi07sbio6g0q86acptsktlq85d8pt0.apps.googleusercontent.com"
@@ -82,46 +77,44 @@ footer { text-align: center; padding: 3rem 1rem; border-top: 1px solid var(--bor
 </header>
 
 <div class="wrap">
-  <h1><em>Professional</em><br>PDF Engine</h1>
-  <p style="color:var(--muted); font-size: 0.82rem; margin-bottom: 1.5rem;">Bina kisi quality loss ke images ko PDF mein badlein.</p>
+  <h1><em>HD Quality</em><br>PDF Creator</h1>
+  <p style="color:var(--muted); font-size: 0.82rem; margin-bottom: 1.5rem;">Fast, Secure aur Professional ✅</p>
 
   <div class="dz" id="dz" onclick="document.getElementById('fi').click()">
     <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📁</div>
-    <div style="font-family:'Syne'; font-weight:700;">Photos Select Karein</div>
-    <p style="font-size: 0.7rem; color:var(--muted);">Gallery se multiple photos chunein</p>
+    <div style="font-family:'Syne'; font-weight:700;">Files Select Karein</div>
   </div>
   <input type="file" id="fi" multiple accept="image/*" style="display:none">
 
   <div id="imgSec" style="display:none">
     <div class="igrid" id="igrid"></div>
-    <div style="background:var(--card); border:1.5px solid var(--border); border-radius:15px; padding:15px; margin-top: 1rem;">
-      <label style="font-size: 0.6rem; font-weight:700; text-transform:uppercase; color:var(--muted);">File Name</label>
-      <input type="text" id="fname" value="mangal_hd_file" style="width:100%; padding:12px; border-radius:8px; border:1px solid var(--border); margin-bottom: 10px; font-family: inherit;">
-      <button class="cbtn" id="cbtn">Create High-Quality PDF</button>
+    <div style="background:var(--card); border:1.5px solid var(--border); border-radius:15px; padding:15px;">
+      <input type="text" id="fname" value="mangal_hd_file" style="width:100%; padding:12px; border-radius:8px; border:1px solid var(--border); margin-bottom: 10px;">
+      <button class="cbtn" id="cbtn">Abhi PDF Banao</button>
     </div>
   </div>
 
   <div class="prog" id="prog">
     <div class="pbg"><div class="pbar" id="pbar"></div></div>
-    <p id="ptxt" style="text-align:center; font-size: 0.7rem; margin-top: 8px; color:var(--muted);">File ban rahi hai...</p>
+    <p style="text-align:center; font-size: 0.7rem; margin-top: 8px;">Processing...</p>
   </div>
 
   <div class="rcard" id="rcard" style="display:none; margin-top:1.5rem; border:2.5px solid var(--green); border-radius:15px; overflow:hidden;">
-    <div style="background:var(--green); color:white; padding:12px; text-align:center; font-weight:800; font-family: 'Syne';">PDF READY! 🎉</div>
+    <div style="background:var(--green); color:white; padding:12px; text-align:center; font-weight:800;">READY! 🎉</div>
     <div style="padding:20px; text-align:center; background:white;">
-      <a id="dlBtn" href="#" style="background:var(--accent); color:white; padding:12px 30px; border-radius:12px; text-decoration:none; font-weight:800; display:inline-block; font-family: 'Syne';">Download Now</a>
+      <a id="dlBtn" href="#" style="background:var(--accent); color:white; padding:12px 30px; border-radius:12px; text-decoration:none; font-weight:800; display:inline-block;">Download PDF</a>
     </div>
   </div>
 
   <div class="comm-box">
     <h3 style="font-family:'Syne'; font-size: 0.95rem; margin-bottom: 1rem;">User Reviews 💬</h3>
     <div class="comm-list" id="commList"></div>
-    <textarea id="uMsg" placeholder="Aapko kaisa laga?" style="width:100%; height:60px; padding:10px; border-radius:10px; border:1.5px solid var(--border); font-family:inherit; font-size: 0.85rem;"></textarea>
+    <textarea id="uMsg" placeholder="Feedback likhein..." style="width:100%; height:60px; padding:10px; border-radius:10px; border:1.5px solid var(--border); font-family:inherit;"></textarea>
     <button onclick="postComm()" style="background:var(--ink); color:white; border:none; padding:10px 25px; border-radius:10px; margin-top: 8px; font-weight:700; cursor:pointer;">Post Review</button>
   </div>
 
   <footer>
-    <p style="font-size: 0.6rem; letter-spacing: 2px; color:var(--muted); text-transform:uppercase;">Built & Secured By</p>
+    <p style="font-size: 0.6rem; color:var(--muted);">DEVELOPED BY</p>
     <a href="#" class="dev-name">MANGALSINGH</a>
   </footer>
 </div>
@@ -157,7 +150,6 @@ document.getElementById('fi').onchange = async (e) => {
   }
   renderGrid();
   document.getElementById('imgSec').style.display = 'block';
-  document.getElementById('imgSec').scrollIntoView({behavior:'smooth'});
 };
 
 function renderGrid() {
@@ -165,7 +157,7 @@ function renderGrid() {
     <div class="icard">
       <img src="${s}">
       <span class="inum">${i+1}</span>
-      <button onclick="imgs.splice(${i},1);renderGrid();" style="position:absolute; top:3px; right:3px; background:rgba(0,0,0,0.6); color:white; border:none; border-radius:50%; width:20px; height:20px; font-size:10px; cursor:pointer;">✕</button>
+      <button onclick="imgs.splice(${i},1);renderGrid();" style="position:absolute; top:3px; right:3px; background:rgba(0,0,0,0.6); color:white; border:none; border-radius:50%; width:20px; height:20px; font-size:10px;">✕</button>
     </div>
   `).join('');
 }
@@ -174,42 +166,36 @@ document.getElementById('cbtn').onclick = async () => {
   if(!imgs.length) return;
   document.getElementById('prog').classList.add('on');
   const pdf = new jsPDF('p', 'mm', 'a4');
-  
   for(let i=0; i<imgs.length; i++) {
     if(i > 0) pdf.addPage();
-    // HD Optimization: SLOW rendering
     pdf.addImage(imgs[i], 'JPEG', 10, 10, 190, 277, undefined, 'SLOW');
     document.getElementById('pbar').style.width = ((i+1)/imgs.length)*100 + '%';
     await new Promise(r => setTimeout(r, 100));
   }
-  
   document.getElementById('dlBtn').href = pdf.output('datauristring');
-  document.getElementById('dlBtn').download = (document.getElementById('fname').value || 'mangal_file') + '.pdf';
+  document.getElementById('dlBtn').download = document.getElementById('fname').value + '.pdf';
   document.getElementById('rcard').style.display = 'block';
   document.getElementById('prog').classList.remove('on');
-  document.getElementById('rcard').scrollIntoView({behavior:'smooth'});
 };
 
 function postComm() {
   const msg = document.getElementById('uMsg').value;
   if(!msg) return;
-  const db = JSON.parse(localStorage.getItem('mangal_feedback') || '[]');
-  db.push({ name: userObj.name, msg: msg, date: new Date().toLocaleDateString() });
-  localStorage.setItem('mangal_feedback', JSON.stringify(db));
+  const db = JSON.parse(localStorage.getItem('m_feedback') || '[]');
+  db.push({ name: userObj.name, msg: msg });
+  localStorage.setItem('m_feedback', JSON.stringify(db));
   document.getElementById('uMsg').value = '';
   loadComms();
 }
 
 function loadComms() {
-  const db = JSON.parse(localStorage.getItem('mangal_feedback') || '[]');
+  const db = JSON.parse(localStorage.getItem('m_feedback') || '[]');
   document.getElementById('commList').innerHTML = db.reverse().map(c => `
-    <div class="comm-item">
-      <strong style="font-size: 0.75rem; color:var(--accent);">${c.name}</strong>
-      <p style="font-size: 0.85rem; margin-top:2px;">${c.msg}</p>
-    </div>
+    <div class="comm-item"><strong>${c.name}</strong><p>${c.msg}</p></div>
   `).join('');
 }
 window.onload = loadComms;
 </script>
 </body>
 </html>
+
